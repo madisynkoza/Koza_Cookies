@@ -1,0 +1,32 @@
+img{
+    max-width:300px;
+    padding: 25px;
+}
+
+#photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:100%;
+}
+
+@media screen and (max-width: 930px){
+    #photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    img{
+        padding:15px 5px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    #photos{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img{
+        padding:15px 5px;
+    }
+}
+
+

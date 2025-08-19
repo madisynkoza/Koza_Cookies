@@ -1,0 +1,28 @@
+#menu-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.type{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin:25px auto;
+    padding: 0 15px;
+}
+
+
+.item{
+    float: left;
+}
+ul{
+    list-style-type: none;
+}
+
+ 
+@media screen and (max-width: 768px) {
+    #menu-grid{
+        display: flex;
+        flex-direction: column;
+    }
+}

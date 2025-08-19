@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link type="text/css" rel="stylesheet"  href="master.css">
+    <link type="text/css" rel="stylesheet"  href="order.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img class = "nav-branding" src="images/goat_logo-removebg-preview.png"></a>
+       
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="treats.html" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="order.html" class="nav-link">Order</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    </header>
+    <main>
+        
+        <h1>Order</h1>
+
+        <div class="info">
+            <h3>Placing Your Order</h3>
+            <ol>
+                <li>1. Complete and submit the order form below</li>
+                <li>2. You will recieve an email within 48hrs confirming your order including the total cost and a pickup time/location</li>
+                <li>3. Respond to the confirmation email to keep your order</li>
+                <li>4. Pick up, pay up, and enjoy! Koza Cookies is <strong>$$$ CASH ONLY $$$</strong> </li>  
+            </ol>
+        </div>
+
+        <form  target="_blank" onsubmit="validate(event)" action="https://formsubmit.co/kozacookies@gmail.com" method="POST">
+            <fieldset class="contact">
+                <legend>Name</legend>
+                <span>
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control"  name="firstName" id="firstName" required>
+                </span>
+                <span>
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control"  name="lastName" id="lastName" required>
+                </span>
+            </fieldset>
+
+            <fieldset class="contact">
+                <legend>Contact</legend>
+                <span>
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="(555)555-5555" required>
+                </span>
+                <span>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" class="form-control"  placeholder="123@email.com" required>
+                </span>
+            </fieldset>
+
+            <fieldset id="order">
+                <legend>Order</legend>
+                <em>Enter all items you wish to order below including quanities of each</em>
+                <!-- <label for="num">Quantity:</label>
+                <input type="number" name="num" id="num">
+                <label for="item">Item:</label>
+                <input type="text" name="item" id="item"> -->
+                <textarea id="orderText" name="orderDetails" class="form-control" rows="10" cols="30" placeholder="Start typing here..." required></textarea>
+            </fieldset>
+
+            <fieldset id="order">
+                <legend>Notes</legend>
+                <em><h6>*optional* </h6>Include any food allergies, specific pickup location/time requests, or other information below</em>
+                <!-- <label for="num">Quantity:</label>
+                <input type="number" name="num" id="num">
+                <label for="item">Item:</label>
+                <input type="text" name="item" id="item"> -->
+
+
+                <textarea id="notes" name="additionalNotes" class="form-control" rows="10" cols="30" placeholder="Start typing here..."></textarea>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Discount Code</legend>
+                <label for="code">Code:</label>
+                <input class="form-control" type="text" name="code" id="code">
+            </fieldset>
+            <div class="center-buttons">
+                <input type="submit" class="button">
+                <input type="reset" class="button">
+            </div>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="nav.js"></script>
+    <script src="validate.js"></script>
+    
+</body>
+</html>

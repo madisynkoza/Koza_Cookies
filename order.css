@@ -1,0 +1,59 @@
+.center-buttons{
+    width: 100%;
+    margin:20px auto;
+}
+
+*{
+    color:black;
+}
+
+.button{
+    margin: auto;
+    border:solid 3px;
+    border-color: #a94926;
+    font-weight: 900;
+}
+
+form{
+    background-color: white;
+    width:75%;
+    margin: auto;
+    padding:10px;
+}
+
+fieldset{
+    text-align: left;
+    padding:10px;
+}
+
+legend{
+    font-weight: bolder;
+    color: rgb(77, 14, 77);
+    text-align: left;
+}
+
+#order{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:900px) {
+    .contact{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+ol>li{
+    text-align: left;
+}
+
+.info{
+    margin: 35px auto;
+    width: 90%;
+    padding: 10px;
+}
+
+strong{
+    color:green;
+}
