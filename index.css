@@ -20,6 +20,16 @@
     padding:20px;
 }
 
+#menu{
+    color:#a94926;
+}
+
+#menu:hover{
+    cursor: pointer;
+    color: gray;
+    font-weight: 900;
+}
+
 
 
 .slidecontainer{
